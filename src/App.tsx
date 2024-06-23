@@ -1,26 +1,51 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import * as React from "react";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import Grid from "@mui/material/Grid";
+import NavBar from "./components/Navbar";
 
-function App() {
+
+export const ColorModeContext = React.createContext({
+  toggleColorMode: () => {},
+});
+
+export default function ToggleColorMode() {
+  const [mode, setMode] = React.useState<"light" | "dark">("light");
+  const colorMode = React.useMemo(
+    () => ({
+      toggleColorMode: () => {
+        setMode((prevMode) => (prevMode === "light" ? "dark" : "light"));
+      },
+    }),
+    []
+  );
+
+  const theme = React.useMemo(
+    () =>
+      createTheme({
+        palette: {
+          mode,
+        },
+      }),
+    [mode]
+  );
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <ColorModeContext.Provider value={colorMode}>
+      <ThemeProvider theme={theme}>
+        <Grid
+          container
+          direction={"row"}
+          spacing={2}
+          style={{ width: "100%", minHeight: "100vh", margin: 0, padding: 0 }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <Grid item xs={2} style={{ padding: 0 }}>
+            <NavBar />
+          </Grid>
+          <Grid item xs={10} style={{ padding: 0 }}>
+            <h3>This is H3</h3>
+          </Grid>
+        </Grid>
+      </ThemeProvider>
+    </ColorModeContext.Provider>
   );
 }
-
-export default App;
