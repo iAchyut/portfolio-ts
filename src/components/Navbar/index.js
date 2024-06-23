@@ -33,6 +33,8 @@ export default function MyApp() {
           borderRadius: 1,
           padding: 0,
           flexDirection: "row",
+          position:'static',
+
         }}
       >
         <Box

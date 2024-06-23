@@ -2,7 +2,7 @@ import * as React from "react";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import Grid from "@mui/material/Grid";
 import NavBar from "./components/Navbar";
-
+import MainContent from "./components/Content";
 
 export const ColorModeContext = React.createContext({
   toggleColorMode: () => {},
@@ -42,7 +42,7 @@ export default function ToggleColorMode() {
             <NavBar />
           </Grid>
           <Grid item xs={10} style={{ padding: 0 }}>
-            <h3>This is H3</h3>
+           <MainContent/>
           </Grid>
         </Grid>
       </ThemeProvider>
