@@ -1,4 +1,4 @@
-const listData = ['Experience', 'Awards','Certificates', 'Skills', 'Education', 'Side Projects'];
+const listData = ['Experience', 'Side Projects','Awards','Certificates', 'Skills', 'Education'];
 
 
 

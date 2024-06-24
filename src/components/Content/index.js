@@ -13,11 +13,12 @@ const MainContent = ({ExpRef, AwardRef, CertiRef, SkillsRef,EducationRef,SidePro
   return (
     <>
       <Experience reference={ExpRef} />
+      <SideProjects reference={SideProjRef} />
       <Awards reference={AwardRef} />
       <Certificates reference={CertiRef} />
       <Skills reference={SkillsRef} />
       <Education reference={EducationRef} />
-      <SideProjects reference={SideProjRef} />
+     
     </>
   );
 };

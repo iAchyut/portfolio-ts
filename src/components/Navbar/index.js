@@ -76,7 +76,7 @@ export default function MyApp({ExpRef, AwardRef,CertiRef, SkillsRef,EducationRef
               <List dense={true}>
                {listData.map((item, index) => { 
                 return ( <ListItem disablePadding>
-                  <ListItemButton onClick={()=>refMapping[item]?.current?.scrollIntoView()}>
+                  <ListItemButton onClick={()=>refMapping[item]?.current?.scrollIntoView({behavior:"smooth"})}>
                     <ListItemText sx={{textAlign:"center",fontSize:10}} primary={item} />
                   </ListItemButton>
                 </ListItem>)
