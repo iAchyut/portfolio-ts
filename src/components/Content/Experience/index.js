@@ -10,10 +10,9 @@ const Experience = ({reference}) => {
         Experience
       </Typography>
       <Stack style={{justifyContent:"center", alignItems:"center"}}>
-        <OutlinedCard style={{ width: "95%", padding:1 }} />
-        <OutlinedCard style={{ width: "95%" ,  padding:1}} />
-        <OutlinedCard style={{ width: "95%" ,  padding:1}} />
-        <OutlinedCard style={{ width: "95%" ,  padding:1}} />
+        <OutlinedCard style={{ width: "95%", padding:1 }} heading={"Deloitte"}/>
+        <OutlinedCard style={{ width: "95%" ,  padding:1}} heading={"Accenture"}/>
+        <OutlinedCard style={{ width: "95%" ,  padding:1}} heading={"Samsung"}/>
       </Stack>
     </>
   );
