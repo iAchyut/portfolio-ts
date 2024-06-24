@@ -3,11 +3,11 @@ import Typography from "@mui/material/Typography";
 import OutlinedCard from "../../ReusuableComponents/Card";
 import Stack from '@mui/material/Stack';
 
-const Experience = ({reference}) => {
+const Education = ({reference}) => {
   return (
     <>
       <Typography ref={reference} variant="h6" gutterBottom sx={{ textAlign: "center" }}>
-        Experience
+        Education
       </Typography>
       <Stack style={{justifyContent:"center", alignItems:"center"}}>
         <OutlinedCard style={{ width: "95%", padding:1 }} />
@@ -19,4 +19,4 @@ const Experience = ({reference}) => {
   );
 };
 
-export default Experience;
+export default Education;

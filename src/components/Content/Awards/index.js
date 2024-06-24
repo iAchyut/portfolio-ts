@@ -7,7 +7,7 @@ const Experience = ({reference}) => {
   return (
     <>
       <Typography ref={reference} variant="h6" gutterBottom sx={{ textAlign: "center" }}>
-        Experience
+        Awards
       </Typography>
       <Stack style={{justifyContent:"center", alignItems:"center"}}>
         <OutlinedCard style={{ width: "95%", padding:1 }} />

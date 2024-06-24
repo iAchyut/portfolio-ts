@@ -15,9 +15,17 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import listData from "./Data/ListData";
 
-export default function MyApp() {
+export default function MyApp({ExpRef, AwardRef,CertiRef, SkillsRef,EducationRef,SideProjRef}) {
   const theme = useTheme();
   const colorMode = React.useContext(ColorModeContext);
+  let refMapping = {
+    "Experience": ExpRef,
+    "Awards":AwardRef,
+    "Certificates":CertiRef,
+    "Skills": SkillsRef,
+    "Education":EducationRef,
+    "Side Projects":SideProjRef
+  }
 
   return (
     <>
@@ -33,7 +41,6 @@ export default function MyApp() {
           borderRadius: 1,
           padding: 0,
           flexDirection: "row",
-          position:'static',
 
         }}
       >
@@ -69,7 +76,7 @@ export default function MyApp() {
               <List dense={true}>
                {listData.map((item, index) => { 
                 return ( <ListItem disablePadding>
-                  <ListItemButton>
+                  <ListItemButton onClick={()=>refMapping[item]?.current?.scrollIntoView()}>
                     <ListItemText sx={{textAlign:"center",fontSize:10}} primary={item} />
                   </ListItemButton>
                 </ListItem>)
