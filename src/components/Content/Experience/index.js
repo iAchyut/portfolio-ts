@@ -2,6 +2,7 @@ import React from "react";
 import Typography from "@mui/material/Typography";
 import OutlinedCard from "../../ReusuableComponents/Card";
 import Stack from "@mui/material/Stack";
+import Divider from "@mui/material/Divider";
 
 const Experience = ({ reference }) => {
   let DeloittejobJSX = (
@@ -83,7 +84,7 @@ const Experience = ({ reference }) => {
     <>
       <Typography
         ref={reference}
-        variant="h6"
+        variant="h5"
         gutterBottom
         sx={{ textAlign: "center" }}
       >
@@ -93,7 +94,7 @@ const Experience = ({ reference }) => {
         <OutlinedCard
           style={{ width: "95%", padding: 1 }}
           heading={"Deloitte | Senior Software Engineer"}
-          secondaryHeading={"May 2021 - Present (3y4m) | Gurgaon, HY"}
+          secondaryHeading={"May 2021 - Present | Gurgaon, HY"}
           body={DeloittejobJSX}
         />
         <OutlinedCard
@@ -108,6 +109,7 @@ const Experience = ({ reference }) => {
           secondaryHeading={"Sept 2017 - Mar 2018 | Noida, UP"}
           body={samsungBody}
         />
+         <Divider width="95%" sx={{margin:5}}/>
       </Stack>
     </>
   );

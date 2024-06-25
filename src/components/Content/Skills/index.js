@@ -2,6 +2,7 @@ import React from "react";
 import Typography from "@mui/material/Typography";
 import OutlinedCard from "../../ReusuableComponents/Card";
 import Stack from "@mui/material/Stack";
+import Divider from "@mui/material/Divider";
 import AvatarChips from "../../ReusuableComponents/Chip";
 import ReactIcon from "./../../../Assets/react.png"
 import JSIcon from "./../../../Assets/javascript.svg"
@@ -24,7 +25,7 @@ const Skills = ({ reference }) => {
     <>
       <Typography
         ref={reference}
-        variant="h6"
+        variant="h5"
         gutterBottom
         sx={{ textAlign: "center" }}
       >
@@ -62,6 +63,7 @@ const Skills = ({ reference }) => {
             <AvatarChips label={"AWS"} icon={aws}/>
             <AvatarChips label={"Docker"} icon={Docker} />
             <AvatarChips label={"React Native"} icon={native} />
+            <Divider width="95%" sx={{margin:5}}/>
           </Stack>
         }
       />

@@ -2,6 +2,7 @@ import React from "react";
 import Typography from "@mui/material/Typography";
 import OutlinedCard from "../../ReusuableComponents/Card";
 import Stack from "@mui/material/Stack";
+import Divider from "@mui/material/Divider";
 
 const Certificates = ({ reference }) => {
   let CertificateJSX = (
@@ -37,7 +38,7 @@ const Certificates = ({ reference }) => {
     <>
       <Typography
         ref={reference}
-        variant="h6"
+        variant="h5"
         gutterBottom
         sx={{ textAlign: "center" }}
       >
@@ -50,6 +51,7 @@ const Certificates = ({ reference }) => {
           secondaryHeading={"2018 - Present"}
           body={CertificateJSX}
         />
+         <Divider width="95%" sx={{margin:5}}/>
       </Stack>
     </>
   );

@@ -2,6 +2,7 @@ import React from "react";
 import Typography from "@mui/material/Typography";
 import OutlinedCard from "../../ReusuableComponents/Card";
 import Stack from "@mui/material/Stack";
+import Divider from "@mui/material/Divider";
 
 const Experience = ({ reference }) => {
   let AwardsJSX = (
@@ -32,7 +33,7 @@ const Experience = ({ reference }) => {
     <>
       <Typography
         ref={reference}
-        variant="h6"
+        variant="h5"
         gutterBottom
         sx={{ textAlign: "center" }}
       >
@@ -45,6 +46,7 @@ const Experience = ({ reference }) => {
           secondaryHeading={"2018 - Present"}
           body={AwardsJSX}
         />
+         <Divider width="95%" sx={{margin:5}}/>
       </Stack>
     </>
   );
