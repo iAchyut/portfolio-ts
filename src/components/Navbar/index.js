@@ -14,6 +14,7 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import listData from "./Data/ListData";
+import { primaryColor } from "../../Constants/color";
 
 export default function MyApp({ExpRef, AwardRef,CertiRef, SkillsRef,EducationRef,SideProjRef}) {
   const theme = useTheme();
@@ -51,7 +52,7 @@ export default function MyApp({ExpRef, AwardRef,CertiRef, SkillsRef,EducationRef
             height: "100%",
             alignItems: "center",
             justifyContent: "center",
-            bgcolor: "background.default",
+            bgcolor: primaryColor,
             color: "text.primary",
             borderRadius: 1,
             padding: 0,
@@ -70,7 +71,7 @@ export default function MyApp({ExpRef, AwardRef,CertiRef, SkillsRef,EducationRef
             Senior Software Enginner, Deloitte
           </Typography>
           <Box
-            sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}
+            sx={{ width: "100%", maxWidth: 360, bgcolor: primaryColor }}
           >
             <nav aria-label="secondary mailbox folders">
               <List dense={true}>

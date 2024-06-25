@@ -5,12 +5,13 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import { primaryColor } from "../../../Constants/color";
 
 export default function OutlinedCard(props) {
   let heading = props.heading.split('|');
   return (
     <Box sx={{ minWidth: 275, ...props.style }}>
-      <Card variant="outlined" sx={{borderRadius:"25px", boxShadow: 3}}>
+      <Card variant="outlined" sx={{borderRadius:"25px",bgcolor:primaryColor, boxShadow: 3}}>
         <React.Fragment>
           <CardContent>
             <Typography variant="h5" component="div">

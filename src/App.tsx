@@ -46,7 +46,10 @@ export default function ToggleColorMode() {
           spacing={2}
           style={{ width: "100%", minHeight: "100vh", margin: 0, padding: 0, position:'relative' }}
         >
-          <Grid item xs={3} style={{ width:"13%", height:"100vh", margin: 0, padding: 0, justifyContent:"center", alignItems:"center" , position:"fixed"}}>
+          <Grid item xs={3} style={{ width:"13%", height:"100vh", margin: 0, padding: 0,
+           justifyContent:"center", alignItems:"center" , 
+           backgroundColor:"#538392",
+           position:"fixed"}}>
             <NavBar ExpRef={ExpRef} AwardRef={AwardRef} CertiRef={CertiRef} 
             SkillsRef={SkillsRef} 
             EducationRef={EducationRef} 
