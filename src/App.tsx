@@ -3,6 +3,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import Grid from "@mui/material/Grid";
 import NavBar from "./components/Navbar";
 import MainContent from "./components/Content";
+import bg from "./Assets/bg5.jpg"
 
 export const ColorModeContext = React.createContext({
   toggleColorMode: () => {},
@@ -44,12 +45,11 @@ export default function ToggleColorMode() {
           container
           direction={"row"}
           spacing={2}
-          style={{ width: "100%", minHeight: "100vh", margin: 0, padding: 0, position:'relative' }}
+          style={{ width: "100%", minHeight: "100vh", margin: 0, padding: 0, position:'relative', backgroundImage:`url(${bg})`}}
         >
           <Grid item xs={3} style={{ width:"13%", height:"100vh", margin: 0, padding: 0,
            justifyContent:"center", alignItems:"center" , 
-           backgroundColor:"#538392",
-           position:"fixed"}}>
+           position:"fixed",}}>
             <NavBar ExpRef={ExpRef} AwardRef={AwardRef} CertiRef={CertiRef} 
             SkillsRef={SkillsRef} 
             EducationRef={EducationRef} 

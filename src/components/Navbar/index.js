@@ -37,11 +37,11 @@ export default function MyApp({ExpRef, AwardRef,CertiRef, SkillsRef,EducationRef
           height: "100%",
           alignItems: "center",
           justifyContent: "center",
-          bgcolor: "background.default",
+          gcolor: 'rgba(0,0,0,0)',
           color: "text.primary",
           borderRadius: 1,
           padding: 0,
-          flexDirection: "row",
+          flexDirection: "row"
 
         }}
       >
@@ -52,7 +52,7 @@ export default function MyApp({ExpRef, AwardRef,CertiRef, SkillsRef,EducationRef
             height: "100%",
             alignItems: "center",
             justifyContent: "center",
-            bgcolor: primaryColor,
+            bgcolor: 'rgba(0,0,0,0)',
             color: "text.primary",
             borderRadius: 1,
             padding: 0,
@@ -71,7 +71,7 @@ export default function MyApp({ExpRef, AwardRef,CertiRef, SkillsRef,EducationRef
             Senior Software Enginner, Deloitte
           </Typography>
           <Box
-            sx={{ width: "100%", maxWidth: 360, bgcolor: primaryColor }}
+            sx={{ width: "100%", maxWidth: 360, bgcolor: 'rgba(0,0,0,0)' }}
           >
             <nav aria-label="secondary mailbox folders">
               <List dense={true}>
@@ -87,7 +87,7 @@ export default function MyApp({ExpRef, AwardRef,CertiRef, SkillsRef,EducationRef
             </nav>
           </Box>
         </Box>
-        <Divider orientation="vertical" />
+        {/* <Divider orientation="vertical" /> */}
       </Box>
     </>
   );
