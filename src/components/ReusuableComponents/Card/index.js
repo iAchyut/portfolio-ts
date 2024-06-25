@@ -19,6 +19,7 @@ export default function OutlinedCard(props) {
               {props.secondaryHeading}
             </Typography>
             <Typography variant="body2">{props.body}</Typography>
+            {props.overRideContent}
           </CardContent>
           {/* <CardActions>
             <Button size="small">Learn More</Button>

@@ -46,7 +46,7 @@ const Certificates = ({ reference }) => {
       <Stack style={{ justifyContent: "center", alignItems: "center" }}>
         <OutlinedCard
           style={{ width: "95%", padding: 1 }}
-          heading={"IT Awards"}
+          heading={"Certifications and Coding"}
           secondaryHeading={"2018 - Present"}
           body={CertificateJSX}
         />
