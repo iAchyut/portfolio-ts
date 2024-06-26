@@ -6,6 +6,7 @@ import SideProjects from "./Side Projects";
 import Education from "./Education";
 import Skills from "./Skills";
 import Grow from "@mui/material/Grow";
+import Introduction from "./Introduction";
 
 const MainContent = ({
   ExpRef,
@@ -14,12 +15,14 @@ const MainContent = ({
   SkillsRef,
   EducationRef,
   SideProjRef,
+  IntroRef
 }) => {
   return (
     <>
       <Grow in={true} timeout={1000}>
         {
           <div>
+            <Introduction reference={IntroRef}/>
             <Experience reference={ExpRef} />
             <SideProjects reference={SideProjRef} />
             <Awards reference={AwardRef} />
