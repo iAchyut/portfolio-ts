@@ -1,9 +1,9 @@
-import * as React  from "react";
+import * as React from "react";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import Grid from "@mui/material/Grid";
 import NavBar from "./components/Navbar";
 import MainContent from "./components/Content";
-import bg from "./Assets/bg5.jpg"
+import bg from "./Assets/bg5.jpg";
 
 export const ColorModeContext = React.createContext({
   toggleColorMode: () => {},
@@ -16,7 +16,7 @@ export default function ToggleColorMode() {
   const SkillsRef = React.useRef(null);
   const EducationRef = React.useRef(null);
   const SideProjRef = React.useRef(null);
-
+  const IntroRef = React.useRef(null);
 
   const [mode, setMode] = React.useState<"light" | "dark">("light");
   const colorMode = React.useMemo(
@@ -33,6 +33,10 @@ export default function ToggleColorMode() {
       createTheme({
         palette: {
           mode,
+          text: {
+            primary: "#000",
+            secondary: "#000",
+          },
         },
       }),
     [mode]
@@ -45,25 +49,55 @@ export default function ToggleColorMode() {
           container
           direction={"row"}
           spacing={2}
-          style={{ width: "100%", minHeight: "100vh", margin: 0, padding: 0, position:'relative', backgroundImage:`url(${bg})`}}
+          style={{
+            width: "100%",
+            minHeight: "100vh",
+            margin: 0,
+            padding: 0,
+            position: "relative",
+            //backgroundColor:"#222629",
+            //backgroundColor:"#222629",
+            //backgroundImage:`url(${bg})`
+          }}
         >
-          <Grid item xs={3} style={{ width:"13%", height:"100vh", margin: 0, padding: 0,
-           justifyContent:"center", alignItems:"center" , 
-           position:"fixed",}}>
-            <NavBar ExpRef={ExpRef} AwardRef={AwardRef} CertiRef={CertiRef} 
-            SkillsRef={SkillsRef} 
-            EducationRef={EducationRef} 
-            SideProjRef={SideProjRef}
+          <Grid
+            item
+            xs={3}
+            style={{
+              width: "13%",
+              height: "100vh",
+              margin: 0,
+              padding: 0,
+              justifyContent: "center",
+              alignItems: "center",
+              //backgroundColor:"#222629",
+              backgroundColor: "#314455",
+              position: "fixed",
+            }}
+          >
+            <NavBar
+              ExpRef={ExpRef}
+              AwardRef={AwardRef}
+              CertiRef={CertiRef}
+              SkillsRef={SkillsRef}
+              EducationRef={EducationRef}
+              SideProjRef={SideProjRef}
+              IntroRef={IntroRef}
             />
           </Grid>
           <Grid item xs={2} style={{ padding: 0 }}>
-           <></>
+            <></>
           </Grid>
           <Grid item xs={10} style={{ padding: 0 }}>
-           <MainContent ExpRef={ExpRef} AwardRef={AwardRef} CertiRef={CertiRef}
-           SkillsRef={SkillsRef} 
-           EducationRef={EducationRef} 
-           SideProjRef={SideProjRef}/>
+            <MainContent
+              ExpRef={ExpRef}
+              AwardRef={AwardRef}
+              CertiRef={CertiRef}
+              SkillsRef={SkillsRef}
+              EducationRef={EducationRef}
+              SideProjRef={SideProjRef}
+              IntroRef={IntroRef}
+            />
           </Grid>
         </Grid>
       </ThemeProvider>

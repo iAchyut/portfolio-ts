@@ -16,17 +16,25 @@ import ListItemText from "@mui/material/ListItemText";
 import listData from "./Data/ListData";
 import { primaryColor } from "../../Constants/color";
 
-export default function MyApp({ExpRef, AwardRef,CertiRef, SkillsRef,EducationRef,SideProjRef}) {
+export default function MyApp({
+  ExpRef,
+  AwardRef,
+  CertiRef,
+  SkillsRef,
+  EducationRef,
+  SideProjRef,
+  IntroRef,
+}) {
   const theme = useTheme();
   const colorMode = React.useContext(ColorModeContext);
   let refMapping = {
-    "Experience": ExpRef,
-    "Awards":AwardRef,
-    "Certificates":CertiRef,
-    "Skills": SkillsRef,
-    "Education":EducationRef,
-    "Side Projects":SideProjRef
-  }
+    Experience: ExpRef,
+    Awards: AwardRef,
+    Certificates: CertiRef,
+    Skills: SkillsRef,
+    Education: EducationRef,
+    "Side Projects": SideProjRef,
+  };
 
   return (
     <>
@@ -37,12 +45,12 @@ export default function MyApp({ExpRef, AwardRef,CertiRef, SkillsRef,EducationRef
           height: "100%",
           alignItems: "center",
           justifyContent: "center",
-          gcolor: 'rgba(0,0,0,0)',
-          color: "text.primary",
+          gcolor: "rgba(0,0,0,0)",
+          //color: "text.primary",
+          color: "#fff",
           borderRadius: 1,
           padding: 0,
-          flexDirection: "row"
-
+          flexDirection: "row",
         }}
       >
         <Box
@@ -52,14 +60,22 @@ export default function MyApp({ExpRef, AwardRef,CertiRef, SkillsRef,EducationRef
             height: "100%",
             alignItems: "center",
             justifyContent: "center",
-            bgcolor: 'rgba(0,0,0,0)',
-            color: "text.primary",
+            bgcolor: "rgba(0,0,0,0)",
+            //color: "text.primary",
+            color: "#fff",
             borderRadius: 1,
             padding: 0,
             flexDirection: "column",
           }}
         >
-          <Typography variant="h6" gutterBottom>
+          <Typography
+            variant="h6"
+            gutterBottom
+            sx={{cursor:"pointer"}}
+            onClick={() => {
+              IntroRef?.current?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
             <b>Achyut Mishra</b>
           </Typography>
           <Typography
@@ -70,19 +86,27 @@ export default function MyApp({ExpRef, AwardRef,CertiRef, SkillsRef,EducationRef
           >
             Senior Software Enginner, Deloitte
           </Typography>
-          <Box
-            sx={{ width: "100%", maxWidth: 360, bgcolor: 'rgba(0,0,0,0)' }}
-          >
+          <Box sx={{ width: "100%", maxWidth: 360, bgcolor: "rgba(0,0,0,0)" }}>
             <nav aria-label="secondary mailbox folders">
               <List dense={true}>
-               {listData.map((item, index) => { 
-                return ( <ListItem disablePadding>
-                  <ListItemButton onClick={()=>refMapping[item]?.current?.scrollIntoView({behavior:"smooth"})}>
-                    <ListItemText sx={{textAlign:"center",fontSize:10}} primary={item} />
-                  </ListItemButton>
-                </ListItem>)
-               })
-               }
+                {listData.map((item, index) => {
+                  return (
+                    <ListItem disablePadding>
+                      <ListItemButton
+                        onClick={() =>
+                          refMapping[item]?.current?.scrollIntoView({
+                            behavior: "smooth",
+                          })
+                        }
+                      >
+                        <ListItemText
+                          sx={{ textAlign: "center", fontSize: 10 }}
+                          primary={item}
+                        />
+                      </ListItemButton>
+                    </ListItem>
+                  );
+                })}
               </List>
             </nav>
           </Box>
