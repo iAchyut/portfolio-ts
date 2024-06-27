@@ -31,6 +31,7 @@ const Skills = ({ reference }) => {
       >
         Skills
       </Typography>
+      <Stack style={{ justifyContent: "center", alignItems: "center" }}>
       <OutlinedCard
         style={{ width: "95%", padding: 1, height:"fit-content" }}
         heading={""}
@@ -67,6 +68,8 @@ const Skills = ({ reference }) => {
           </Stack>
         }
       />
+       <Divider width="95%" sx={{margin:5}}/>
+       </Stack>
     </>
   );
 };

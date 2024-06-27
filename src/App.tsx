@@ -17,6 +17,7 @@ export default function ToggleColorMode() {
   const EducationRef = React.useRef(null);
   const SideProjRef = React.useRef(null);
   const IntroRef = React.useRef(null);
+  const ContactRef = React.useRef(null);
 
   const [mode, setMode] = React.useState<"light" | "dark">("light");
   const colorMode = React.useMemo(
@@ -83,6 +84,7 @@ export default function ToggleColorMode() {
               EducationRef={EducationRef}
               SideProjRef={SideProjRef}
               IntroRef={IntroRef}
+              ContactRef={ContactRef}
             />
           </Grid>
           <Grid item xs={2} style={{ padding: 0 }}>
@@ -97,6 +99,7 @@ export default function ToggleColorMode() {
               EducationRef={EducationRef}
               SideProjRef={SideProjRef}
               IntroRef={IntroRef}
+              ContactRef={ContactRef}
             />
           </Grid>
         </Grid>

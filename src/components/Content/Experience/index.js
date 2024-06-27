@@ -12,13 +12,13 @@ const Experience = ({ reference }) => {
           Lead client-side team in architecting and developing two investment
           application utilizing <b>ReactJS</b>, <b>React Router</b>,{" "}
           <b>Context API</b>, and <b>SharePoint</b>. (<b>2000+</b> Active users
-          across US, EU and APAC)
+          across US, EU and APAC) (Cient Appreciation Email)
         </li>
         <li>
           Designed a portal to <b>track user activity</b>, including report
           visits, clicks, and bookmarks. Used graphs and grids to visualize this
           data and enable <b>informed business decision-making (1000+ Users)</b>
-          .
+          .(Cient Appreciation Email)
         </li>
         <li>
           <b>Lead UI team</b> to develop an internal Deloitte Initiative for
