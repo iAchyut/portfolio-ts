@@ -24,6 +24,7 @@ export default function MyApp({
   EducationRef,
   SideProjRef,
   IntroRef,
+  ContactRef
 }) {
   const theme = useTheme();
   const colorMode = React.useContext(ColorModeContext);
@@ -34,6 +35,7 @@ export default function MyApp({
     Skills: SkillsRef,
     Education: EducationRef,
     "Side Projects": SideProjRef,
+    Contact:ContactRef
   };
 
   return (

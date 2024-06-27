@@ -5,30 +5,24 @@ import Stack from "@mui/material/Stack";
 import Divider from "@mui/material/Divider";
 
 const Education = ({ reference }) => {
-  let SMVDUjsx = <>
-  <ul>
-    <li>
-      Colleage of Engineering
-    </li>
-      <li>
-        Electronics and Communication Engineering
-      </li>
-      <li>
-        CGPA : 7.31/10.00
-      </li>
-  </ul>
-  </>
+  let SMVDUjsx = (
+    <>
+      <ul>
+        <li>College of Engineering</li>
+        <li>Electronics and Communication Engineering</li>
+        <li>CGPA :<b>7.31/10.00</b> </li>
+      </ul>
+    </>
+  );
 
-let CMSjsx = <>
-<ul>
-    <li>
-      10th : 89.5%
-    </li>
-    <li>
-      12th : 89.2%
-    </li>
-</ul>
-</>
+  let CMSjsx = (
+    <>
+      <ul>
+        <li>10th : 89.5%</li>
+        <li>12th : 89.2%</li>
+      </ul>
+    </>
+  );
 
   return (
     <>
@@ -47,13 +41,13 @@ let CMSjsx = <>
           secondaryHeading={"May 2013 - June 2017"}
           body={SMVDUjsx}
         />
-         <OutlinedCard
+        <OutlinedCard
           style={{ width: "95%", padding: 1 }}
           heading={"City Montessori School | Lucknow, UP"}
           secondaryHeading={"April 1998 - May 2013"}
           body={CMSjsx}
         />
-         <Divider width="95%" sx={{margin:5}}/>
+        <Divider width="95%" sx={{ margin: 5 }} />
       </Stack>
     </>
   );

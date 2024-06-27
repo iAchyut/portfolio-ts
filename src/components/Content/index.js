@@ -7,6 +7,7 @@ import Education from "./Education";
 import Skills from "./Skills";
 import Grow from "@mui/material/Grow";
 import Introduction from "./Introduction";
+import ContactMe from "./ContactMe";
 
 const MainContent = ({
   ExpRef,
@@ -15,7 +16,8 @@ const MainContent = ({
   SkillsRef,
   EducationRef,
   SideProjRef,
-  IntroRef
+  IntroRef,
+  ContactRef
 }) => {
   return (
     <>
@@ -29,6 +31,7 @@ const MainContent = ({
             <Certificates reference={CertiRef} />
             <Skills reference={SkillsRef} />
             <Education reference={EducationRef} />
+            <ContactMe reference={ContactRef} />
           </div>
         }
       </Grow>
