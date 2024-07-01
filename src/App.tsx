@@ -18,6 +18,7 @@ export default function ToggleColorMode() {
   const SideProjRef = React.useRef(null);
   const IntroRef = React.useRef(null);
   const ContactRef = React.useRef(null);
+  const RecongnitionRef = React.useRef(null);
 
   const [mode, setMode] = React.useState<"light" | "dark">("light");
   const colorMode = React.useMemo(
@@ -39,7 +40,12 @@ export default function ToggleColorMode() {
             secondary: "#000",
           },
         },
-      }),
+        typography: {
+          fontFamily: 'Lora',
+          fontWeightLight:400
+        }
+      }
+      ),
     [mode]
   );
 
@@ -85,6 +91,7 @@ export default function ToggleColorMode() {
               SideProjRef={SideProjRef}
               IntroRef={IntroRef}
               ContactRef={ContactRef}
+              RecongnitionRef={RecongnitionRef}
             />
           </Grid>
           <Grid item xs={2} style={{ padding: 0 }}>
@@ -100,6 +107,7 @@ export default function ToggleColorMode() {
               SideProjRef={SideProjRef}
               IntroRef={IntroRef}
               ContactRef={ContactRef}
+              RecongnitionRef={RecongnitionRef}
             />
           </Grid>
         </Grid>

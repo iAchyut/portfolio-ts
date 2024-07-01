@@ -15,6 +15,8 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import listData from "./Data/ListData";
 import { primaryColor } from "../../Constants/color";
+import Avatar from '@mui/material/Avatar';
+import ProfilePhoto from "../../Assets/photo.jpg"
 
 export default function MyApp({
   ExpRef,
@@ -24,7 +26,8 @@ export default function MyApp({
   EducationRef,
   SideProjRef,
   IntroRef,
-  ContactRef
+  ContactRef,
+  RecongnitionRef
 }) {
   const theme = useTheme();
   const colorMode = React.useContext(ColorModeContext);
@@ -35,7 +38,8 @@ export default function MyApp({
     Skills: SkillsRef,
     Education: EducationRef,
     "Side Projects": SideProjRef,
-    Contact:ContactRef
+    Contact:ContactRef,
+    Recongnitions:RecongnitionRef
   };
 
   return (
@@ -70,6 +74,8 @@ export default function MyApp({
             flexDirection: "column",
           }}
         >
+          <Avatar alt="Remy Sharp" src={ProfilePhoto} sx={{ width: 100, height: 100 }} />
+          <br/>
           <Typography
             variant="h6"
             gutterBottom
