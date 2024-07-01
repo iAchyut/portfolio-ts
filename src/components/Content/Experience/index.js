@@ -9,10 +9,13 @@ const Experience = ({ reference }) => {
     <>
       <ul>
         <li>
-          Lead client-side team in architecting and developing two investment
-          application utilizing <b>ReactJS</b>, <b>React Router</b>,{" "}
-          <b>Context API</b>, and <b>SharePoint</b>. (<b>2000+</b> Active users
-          across US, EU and APAC) (Cient Appreciation Email)
+          <Typography variant="p" sx={{ fontWeight: "1" }}>
+            Lead UI/UX team in architecting and developing an investment
+            applications utilizing ReactJS, Router, Context API, Formik, AGGrid
+            and SharePoint. (2000+ Active users across US, EU and APAC). Removed
+            34 on-prem Servers from Application Infrastructure across all
+            environments. Cost savings on product licensing (Nintex, Aspose etc)
+          </Typography>
         </li>
         <li>
           Designed a portal to <b>track user activity</b>, including report
@@ -21,19 +24,25 @@ const Experience = ({ reference }) => {
           .(Cient Appreciation Email)
         </li>
         <li>
-          <b>Lead UI team</b> to develop an internal Deloitte Initiative for
-          trackcing vulnerabilities in cloud system. Created{" "}
-          <b>Login/Logout, Grids, Graphs</b>, to view scan results from{" "}
-          <b>AWS S3</b>
+          Served as Lead React Architect, designing app architecture, data flow,
+          authentication, global states, and routing. Created AGGrid, Formik
+          POCs, structured development in JIRA, and guided the team through
+          project completion over 8 months.
         </li>
         <li>
           {" "}
-          Developed POC's in <b>AGGrid</b>, <b>Formik</b>, <b>Yup</b>,{" "}
-          <b>Google Maps</b>, <b>Nivo Charts</b>, <b>MUI</b>.
+          Developed an user activity tracking analytics portal for 1000+ users.
+          Engineered the entire data pipeline, utilizing Snowflake for real-time
+          data storage through custom stored procedures. Implemented .NET
+          endpoints to transfer data to an interactive dashboard. Designed
+          intuitive UI components with dynamic graphs and grids to visualize
+          data, empowering informed business decision-making.
         </li>
         <li>
-          <b>Backend</b>: Developed endpoints using .NET Core and C#. Created
-          stored procedures, views, and triggers in MySQL and Snowflake.
+          Lead UI team to develop an internal Deloitte Initiative Dashboard for
+          tracking vulnerabilities in cloud systems. Created Login/Logout,
+          Grids, Graphs to view scan results from AWS S3. Ability to resolve
+          vulnerabilities from UI, run scans and download detailed reports.
         </li>
       </ul>
     </>
@@ -44,16 +53,15 @@ const Experience = ({ reference }) => {
       <ul>
         <li>
           Leading a team of 4 developers for the development of web and desktop
-          applications. Using{" "}
-          <b>HTML, CSS, Javascript, jQuery, XML, ASP.NET, C#</b> and Windows
-          services.
+          applications. Using HTML, CSS, Javascript, jQuery, XML, ASP.NET, C#,
+          Web Services, SQL, Stored Procs, Views, SOAP and Windows services
         </li>
+
         <li>
-          Implementing web services using <b>SOAP and XML/HTTP</b> technologies.
-        </li>
-        <li>
-          Scripting experience in Stored Procedure, Function, Trigger using MS
-          SQL 2005/2008/Postgre
+          As Lead Developer, facilitated client communications, clarified
+          requirements, and resolved team queries. Estimated timelines, guided
+          development, addressed issues, and ensured timely delivery of all
+          deliverables by resolving QA-reported bugs. (4+ releases/year
         </li>
         <li>
           Developved automations using{" "}
@@ -70,11 +78,12 @@ const Experience = ({ reference }) => {
     <>
       <ul>
         <li>
-          Worked on minimizing the defects for PCB and analyzing data to predict
-          the root cause of issues.
+          Maintained defect reports and guided the team on defect trends. These
+          trends were later used to minimize defects and root cause of it.
         </li>
         <li>
-          Maintaining reports for defects and enhancements that can be done.
+          Developed a website to visually display defects trends using
+          HTML/CSS, SQL , Material UI and Nivo Library
         </li>
       </ul>
     </>
@@ -109,7 +118,7 @@ const Experience = ({ reference }) => {
           secondaryHeading={"Sept 2017 - Mar 2018 | Noida, UP"}
           body={samsungBody}
         />
-         <Divider width="95%" sx={{margin:5}}/>
+        <Divider width="95%" sx={{ margin: 5 }} />
       </Stack>
     </>
   );
