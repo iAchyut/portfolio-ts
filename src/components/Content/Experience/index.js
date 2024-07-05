@@ -17,18 +17,21 @@ const Experience = ({ reference }) => {
             environments. Cost savings on product licensing (Nintex, Aspose etc)
           </Typography>
         </li>
+        <br/>
         <li>
           Designed a portal to <b>track user activity</b>, including report
           visits, clicks, and bookmarks. Used graphs and grids to visualize this
           data and enable <b>informed business decision-making (1000+ Users)</b>
           .(Cient Appreciation Email)
         </li>
+        <br/>
         <li>
           Served as Lead React Architect, designing app architecture, data flow,
           authentication, global states, and routing. Created AGGrid, Formik
           POCs, structured development in JIRA, and guided the team through
           project completion over 8 months.
         </li>
+        <br/>
         <li>
           {" "}
           Developed an user activity tracking analytics portal for 1000+ users.
@@ -38,6 +41,7 @@ const Experience = ({ reference }) => {
           intuitive UI components with dynamic graphs and grids to visualize
           data, empowering informed business decision-making.
         </li>
+        <br/>
         <li>
           Lead UI team to develop an internal Deloitte Initiative Dashboard for
           tracking vulnerabilities in cloud systems. Created Login/Logout,
@@ -56,13 +60,14 @@ const Experience = ({ reference }) => {
           applications. Using HTML, CSS, Javascript, jQuery, XML, ASP.NET, C#,
           Web Services, SQL, Stored Procs, Views, SOAP and Windows services
         </li>
-
+        <br/>
         <li>
           As Lead Developer, facilitated client communications, clarified
           requirements, and resolved team queries. Estimated timelines, guided
           development, addressed issues, and ensured timely delivery of all
           deliverables by resolving QA-reported bugs. (4+ releases/year
         </li>
+        <br/>
         <li>
           Developved automations using{" "}
           <b>
@@ -81,6 +86,7 @@ const Experience = ({ reference }) => {
           Maintained defect reports and guided the team on defect trends. These
           trends were later used to minimize defects and root cause of it.
         </li>
+        <br/>
         <li>
           Developed a website to visually display defects trends using
           HTML/CSS, SQL , Material UI and Nivo Library
