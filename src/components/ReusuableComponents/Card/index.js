@@ -37,10 +37,10 @@ export default function OutlinedCard(props) {
                 {heading.length > 1 ? heading[1] : ""}{" "}
               </span>
             </Typography>
-            <Typography sx={{ mb: 1.5 }} color="text.secondary">
+            <Typography variant="h6" sx={{ mb: 1.5 }} color="text.secondary">
               {props.secondaryHeading}
             </Typography>
-            <Typography variant="body2">{props.body}</Typography>
+            <Typography variant="p" variant="body2">{props.body}</Typography>
             {props.overRideContent}
           </CardContent>
           {/* <CardActions>

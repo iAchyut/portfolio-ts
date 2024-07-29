@@ -9,10 +9,10 @@ const Experience = ({ reference }) => {
     <>
       <ul>
         <li>
-          <Typography variant="p" sx={{ fontWeight: "1" }}>
-            Lead UI/UX team in architecting and developing an investment
-            applications utilizing ReactJS, Router, Context API, Formik, AGGrid
-            and SharePoint. (2000+ Active users across US, EU and APAC). Removed
+          <Typography variant="p" sx={{ fontWeight: "500" }}>
+            Lead UI/UX team in <b>architecting and developing </b>an investment
+            applications utilizing <b>ReactJS, Router, Context API, Formik, Yup, AG-Grid, Google Maps,
+            Material UI, .Net, Docker, AWS and SharePoint. (2000+ Active users across US, EU and APAC).</b> Removed
             34 on-prem Servers from Application Infrastructure across all
             environments. Cost savings on product licensing (Nintex, Aspose etc)
           </Typography>
@@ -101,7 +101,7 @@ const Experience = ({ reference }) => {
         ref={reference}
         variant="h5"
         gutterBottom
-        sx={{ textAlign: "center" }}
+        sx={{ textAlign: "center", fontWeight:"900" }}
       >
         Experience
       </Typography>
