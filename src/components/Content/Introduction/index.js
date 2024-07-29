@@ -16,8 +16,8 @@ const Introduction = (props) => {
           margin: "10px",
         }}
       >
-        <Typography variant="h1" style={{ fontSize: "4rem" }}>Achyut Mishra</Typography>
-        <Typography variant="p" >
+        <Typography variant="h1" style={{ fontSize: "4rem", fontWeight:700}}>Achyut Mishra</Typography>
+        <Typography variant="p" sx={{ fontWeight: "400" }} >
           Helping clients to build complex web applications, developing POC's
           and building React App Architecture / Data flow. Coding on React JS
           framework, Redux, Context, React Router, JavaScript, HTML, CSS, .Net

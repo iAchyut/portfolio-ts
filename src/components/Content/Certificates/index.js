@@ -8,6 +8,7 @@ const Certificates = ({ reference }) => {
   let CertificateJSX = (
     <>
       <b>Course and Certificates</b>
+      <ul>
       <li>
         <b>ReactJs : Udemy</b>
       </li>
@@ -26,11 +27,12 @@ const Certificates = ({ reference }) => {
       <li>
         <b>Python (Gold) : HackerRank</b>
       </li>
+      </ul>
       <br />
       <b>Extra Curricular</b>
       <ul>
-        <li>3rd Position: All India University Esports 2017</li>
-        <li>Fitness Competition (Plank) 2019</li>
+        <li><b>3rd Position: All India University Esports 2017</b></li>
+        <li><b>Fitness Competition (Plank) 2019</b></li>
       </ul>
     </>
   );

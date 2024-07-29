@@ -42,7 +42,13 @@ export default function ToggleColorMode() {
         },
         typography: {
           fontFamily: 'Lora',
-          fontWeightLight:400
+          fontWeightLight:500,
+          h5:{
+            fontWeight:900
+          },
+          h6:{
+            fontWeight:500
+          },
         }
       }
       ),
